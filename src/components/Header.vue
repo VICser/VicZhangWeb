@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="theheader">
       <el-menu
         :default-active="2"
         class="el-menu-demo"
@@ -12,7 +12,7 @@
             <template slot="title">我的工作台</template>
             <el-menu-item index="2-1"><router-link to="/datatag">数据标注</router-link></el-menu-item>
             <el-menu-item index="2-2"><router-link to="/coding">Coding</router-link></el-menu-item>
-            <el-menu-item index="2-3"><router-link to="/markdown">MarkDown</router-link></el-menu-item>
+            <el-menu-item index="2-3"><router-link to="/translate">TransLate</router-link></el-menu-item>
             <el-submenu index="2-4">
             <template slot="title">TodoList</template>
             <el-menu-item index="2-4-1">Todo</el-menu-item>
@@ -43,5 +43,8 @@ export default {
 a {
     text-decoration-line: none;
     color: aliceblue
+}
+.el-menu-demo{
+  height: 50px;
 }
 </style>

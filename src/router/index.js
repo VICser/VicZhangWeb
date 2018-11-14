@@ -5,7 +5,7 @@ import Home from '@/components/Home'
 import Photo from '@/components/Photo'
 import DataTag from '@/components/DataTag'
 import Coding from '@/components/Coding'
-import MarkDown from '@/components/MarkDown'
+import TransLate from '@/components/TransLate'
 
 Vue.use(Router)
 
@@ -37,9 +37,9 @@ export default new Router({
       component: Coding
     },
     {
-      path: '/markdown',
-      name: 'markdown',
-      component: MarkDown
+      path: '/translate',
+      name: 'translate',
+      component: TransLate
     },
     {path:"*",redirect:"/"}
     ],
